@@ -43,6 +43,7 @@
   "scripts": {
     "start": "vite",
     "build": "lowcoder-cli build",
+    "docs": "docsify serve ./docs",
     "build_publish": "lowcoder-cli build --publish"
   },
   "publishConfig": {
