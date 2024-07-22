@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.4...v1.0.5) (2024-07-22)
+
+
+### Bug Fixes
+
+* skip autoheight ([045a1cd](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/commit/045a1cd490f9c0b3174a548b91050d209a223c04))
+
 ## [1.0.4](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.3...v1.0.4) (2024-07-22)
 
 
