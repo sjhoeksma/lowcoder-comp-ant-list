@@ -174,6 +174,7 @@ var InfiniteListComp = (function () {
     }, []);
 
     //Create the plugin container for the component
+    //                <InfiniteListContainer {...item} />
     return (
       <div
         ref={conRef}
@@ -211,7 +212,7 @@ var InfiniteListComp = (function () {
                   description={item.id}
                 />
                 <div>Content</div>
-                <InfiniteListContainer {...item} />
+
               </List.Item>
             )}
           />
@@ -280,10 +281,7 @@ InfiniteListComp = withMethodExposing(InfiniteListComp, [
 */
 
 //Expose all methods
-InfiniteListComp = withExposingConfigs(InfiniteListComp, [
+export default withExposingConfigs(InfiniteListComp, [
   new NameConfig("data", "data"),
   new NameConfig("loading", "loading"),
 ]);
-
-
-export default InfiniteListComp;
