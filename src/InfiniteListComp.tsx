@@ -177,7 +177,17 @@ var InfiniteListComp = (function () {
     }, []);
 
     //Create the plugin container for the component
-    //                <InfiniteListContainer {...item} />
+    //  
+    // <InfiniteListContainer {...item} /> Should allow building meta en content
+    /* 
+     <List.Item.Meta
+                  avatar={<Avatar src={item.picture.large} />}
+                  title={<a href="https://ant.design">{item.name.last}</a>}
+                  description={item.id}
+                />
+                <div>Content</div>
+    */
+
     return (
       <div ref={conRef} id={'scrollableDiv' + id} style={{
         height: dimensions.height, //props.autoHeight ? '100%' : dimensions.height || '100%',
@@ -206,19 +216,22 @@ var InfiniteListComp = (function () {
             renderItem={(item: any) => (
               <List.Item key={item.id}>
 
+                <InfiniteListContainer
+                  {...item} />
                 <List.Item.Meta
                   avatar={<Avatar src={item.picture.large} />}
                   title={<a href="https://ant.design">{item.name.last}</a>}
                   description={item.id}
                 />
-                <InfiniteListContainer {...item} />
                 <div>Content</div>
+
               </List.Item>
             )}
           />
         </InfiniteScroll>
       </div>
     );
+
   })
     //The properties that will be visible inside lowcoder
     .setPropertyViewFn((children: any) => {
