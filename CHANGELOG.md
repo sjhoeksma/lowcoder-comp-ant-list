@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.6...v1.0.7) (2024-07-22)
+
+
+### Bug Fixes
+
+* test height only ([86cfb78](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/commit/86cfb7881f699db5430cf5482e8f7631db3b7889))
+
 ## [1.0.6](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.5...v1.0.6) (2024-07-22)
 
 
