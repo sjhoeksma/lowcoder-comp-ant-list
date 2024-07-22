@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.5...v1.0.6) (2024-07-22)
+
+
+### Bug Fixes
+
+* added wrapper div ([beb6683](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/commit/beb6683ab2376ae0b294fc22c3ea754a6a3761bf))
+
 ## [1.0.5](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.4...v1.0.5) (2024-07-22)
 
 
