@@ -2,10 +2,10 @@
   "name": "lowcoder-comp-infinite-list",
   "version": "0.0.1",
   "type": "module",
-  "homepage": "https://sjhoeksma.github.io/lowcoder-infinite-list/",
+  "homepage": "https://sjhoeksma.github.io/lowcoder-comp-infinite-list/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sjhoeksma/lowcoder-infinite-list.git"
+    "url": "git+https://github.com/sjhoeksma/lowcoder-comp-infinite-list.git"
   },
   "license": "MIT",
   "dependencies": {
