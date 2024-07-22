@@ -105,7 +105,7 @@ var InfiniteListComp = (function () {
   };
 
   //The Builder function creating the real component
-  return new UICompBuilder(childrenMap, (props: {
+  return new ContainerCompBuilder(childrenMap, (props: {
     autoHeight: boolean;
     styles: {
       backgroundColor: any; border: any; radius: any; borderWidth: any;
