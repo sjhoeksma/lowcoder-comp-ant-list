@@ -126,6 +126,7 @@ var InfiniteListComp = (function () {
     // props.container.children.view.getView();
     // const { style, headerStyle, bodyStyle, footerStyle } = props.container;
 
+    /*
     const { width, height, ref: conRef } = useResizeDetector({
       onResize: () => {
         const container = conRef.current;
@@ -146,6 +147,7 @@ var InfiniteListComp = (function () {
         })
       }
     });
+    */
 
     const [id] = useState(Math.random().toString(16).slice(2));
 
@@ -175,9 +177,10 @@ var InfiniteListComp = (function () {
 
     //Create the plugin container for the component
     //                <InfiniteListContainer {...item} />
+    //       ref={conRef}
     return (
       <div
-        ref={conRef}
+
         id={'scrollableDiv' + id}
         style={{
           height: dimensions.height, //props.autoHeight ? '100%' : dimensions.height || '100%',
