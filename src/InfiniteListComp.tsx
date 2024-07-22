@@ -181,7 +181,7 @@ var InfiniteListComp = (function () {
         id={'scrollableDiv' + id}
         style={{
           height: props.autoHeight ? '100%' : dimensions.height || '100%',
-          width: dimensions.width || '100%',
+          width: dimensions.width,
           overflow: 'auto',
           border: `${props.styles.border}`,
           backgroundColor: `${props.styles.backgroundColor}`,
@@ -213,6 +213,7 @@ var InfiniteListComp = (function () {
                 />
                 <div>Content</div>
 
+                <InfiniteListContainer {...item} />
               </List.Item>
             )}
           />
