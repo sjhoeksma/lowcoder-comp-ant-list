@@ -211,6 +211,7 @@ var InfiniteListComp = (function () {
                   title={<a href="https://ant.design">{item.name.last}</a>}
                   description={item.id}
                 />
+                <InfiniteListContainer {...item} />
                 <div>Content</div>
               </List.Item>
             )}
