@@ -192,7 +192,6 @@ var InfiniteListComp = (function () {
           id={'scrollableDiv' + id}
           style={{
             height: '100%',
-            width: '100%',
             border: '0px',
             margin: '0px',
             padding: '0px',
