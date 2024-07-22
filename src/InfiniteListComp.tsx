@@ -212,8 +212,6 @@ var InfiniteListComp = (function () {
                   description={item.id}
                 />
                 <div>Content</div>
-
-                <InfiniteListContainer {...item} />
               </List.Item>
             )}
           />
