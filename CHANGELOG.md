@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.7...v1.0.8) (2024-07-22)
+
+
+### Bug Fixes
+
+* no auto resize ([0258c28](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/commit/0258c28ca5714589aaa853bf8b290a57ed188d4c))
+
 ## [1.0.7](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.6...v1.0.7) (2024-07-22)
 
 
