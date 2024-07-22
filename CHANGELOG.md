@@ -1,3 +1,10 @@
+## [1.0.10](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.9...v1.0.10) (2024-07-22)
+
+
+### Bug Fixes
+
+* ContainerBuilder ([61b9d91](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/commit/61b9d915c632ea69736e8ff4d8c85cd91d568c0c))
+
 ## [1.0.9](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.8...v1.0.9) (2024-07-22)
 
 
