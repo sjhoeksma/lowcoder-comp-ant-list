@@ -119,7 +119,7 @@ var InfiniteListComp = (function () {
     url: string;
   }) => {
     //Default size of component
-    const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
+    const [dimensions, setDimensions] = useState({ width: 650, height: 0 });
     //Catch the resizing of component
 
     // const { items: bodyItems, ...otherBodyProps } =
