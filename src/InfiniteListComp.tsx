@@ -119,7 +119,7 @@ var InfiniteListComp = (function () {
     url: string;
   }) => {
     //Default size of component
-    const [dimensions, setDimensions] = useState({ width: 650, height: 0 });
+    const [dimensions, setDimensions] = useState({ width: 650, height: 640 });
     //Catch the resizing of component
 
     // const { items: bodyItems, ...otherBodyProps } =
@@ -180,7 +180,7 @@ var InfiniteListComp = (function () {
         ref={conRef}
         id={'scrollableDiv' + id}
         style={{
-          height: props.autoHeight ? '100%' : dimensions.height || '100%',
+          height: dimensions.height, //props.autoHeight ? '100%' : dimensions.height || '100%',
           width: dimensions.width,
           overflow: 'auto',
           border: `${props.styles.border}`,
