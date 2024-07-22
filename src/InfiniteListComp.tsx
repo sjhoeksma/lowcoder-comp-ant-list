@@ -131,6 +131,8 @@ var InfiniteListComp = (function () {
         const container = conRef.current;
         if (!container || !width || !height) return;
 
+        console.log("Resize", width, height)
+        /*
         if (props.autoHeight) {
           setDimensions({
             width,
@@ -144,6 +146,7 @@ var InfiniteListComp = (function () {
           width,
           height: height,
         })
+        */
       }
     });
 
@@ -176,7 +179,7 @@ var InfiniteListComp = (function () {
     //Create the plugin container for the component
     //                <InfiniteListContainer {...item} />
     return (
-      <div ref={conRef} style={{
+      <div ref={conRef} id={'scrollableDiv' + id} style={{
         height: dimensions.height, //props.autoHeight ? '100%' : dimensions.height || '100%',
         width: dimensions.width,
         border: `${props.styles.border}`,
@@ -187,42 +190,33 @@ var InfiniteListComp = (function () {
         margin: `${props.styles.margin}`,
         padding: `${props.styles.padding}`,
         fontSize: `${props.styles.textSize}`,
-      }}>
-        <div
-          id={'scrollableDiv' + id}
-          style={{
-            height: '100%',
-            border: '0px',
-            margin: '0px',
-            padding: '0px',
-            overflow: 'auto',
-          }}
+        overflow: 'auto',
+      }}
+      >
+        <InfiniteScroll
+          dataLength={(props.data.value.length || 0)}
+          next={loadMoreData}
+          hasMore={props.limit <= 0 ? true : (props.data.value.length || 0) < props.limit}
+          loader={<Skeleton avatar paragraph={{ rows: 1 }} active />}
+          endMessage={<Divider plain>{props.endMessage}</Divider>}
+          scrollableTarget={'scrollableDiv' + id}
         >
-          <InfiniteScroll
-            dataLength={(props.data.value.length || 0)}
-            next={loadMoreData}
-            hasMore={props.limit <= 0 ? true : (props.data.value.length || 0) < props.limit}
-            loader={<Skeleton avatar paragraph={{ rows: 1 }} active />}
-            endMessage={<Divider plain>{props.endMessage}</Divider>}
-            scrollableTarget={'scrollableDiv' + id}
-          >
-            <List
-              dataSource={props.data.value || []}
-              renderItem={(item: any) => (
-                <List.Item key={item.id}>
+          <List
+            dataSource={props.data.value || []}
+            renderItem={(item: any) => (
+              <List.Item key={item.id}>
 
-                  <List.Item.Meta
-                    avatar={<Avatar src={item.picture.large} />}
-                    title={<a href="https://ant.design">{item.name.last}</a>}
-                    description={item.id}
-                  />
-                  <div>Content</div>
-                </List.Item>
-              )}
-            />
-          </InfiniteScroll>
-        </div>
-      </div >
+                <List.Item.Meta
+                  avatar={<Avatar src={item.picture.large} />}
+                  title={<a href="https://ant.design">{item.name.last}</a>}
+                  description={item.id}
+                />
+                <div>Content</div>
+              </List.Item>
+            )}
+          />
+        </InfiniteScroll>
+      </div>
     );
   })
     //The properties that will be visible inside lowcoder
