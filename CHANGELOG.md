@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/compare/v1.0.0...v1.0.1) (2024-07-22)
+
+
+### Bug Fixes
+
+* width ([f9015d8](https://github.com/sjhoeksma/lowcoder-comp-infinite-list/commit/f9015d87a192f9b4adf7b33708f23e02a484e4a6))
+
 # 1.0.0 (2024-07-22)
 
 
